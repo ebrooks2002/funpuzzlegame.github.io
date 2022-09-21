@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        h1{
+            margin: auto;
+            width: 400px;
+        }
 
+        #startBtn{
+            width: 100px;
+            background-color:;
+            text-align: center;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <title>Macalaster Guessing Game</title>
+    <h1>Macalaster Guessing Game</h1>
+    <div id="startBtn">
+        <script>
+        let btn = document.createElement("button");
+
+        btn.innerHTML = "Start";
+
+        btn.onclick = function () {
+
+            location.href = 'game.html'
+
+        };
+        btn.style.backgroundColor = 'yellow'
+        btn.style.width = '100px'
+        btn.style.borderRadius = '25px'
+        btn.style.margin = 'auto'
+        let element = document.getElementById('startBtn');
+        element.appendChild(btn);
+
+    </script>
+    </div>
+</body>
+</html>

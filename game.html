@@ -65,6 +65,31 @@
         button:hover{
             background-color: #A5adaf;
         }
+        /*#timer {*/
+        /*    height: 30px;*/
+        /*    width: 100%;*/
+        /*    background: #7ADAF6;*/
+        /*    border-bottom: 1px solid #4F8EA1;*/
+        /*    transition: all .3s ease-out;*/
+        /*}*/
+
+        .base-timer {
+            position: relative;
+            height: 300px;
+            width: 300px;
+        }
+
+        /* Removes SVG styling that would hide the time label */
+        .base-timer__circle {
+            fill: none;
+            stroke: none;
+        }
+
+        /* The SVG path that displays the timer's progress */
+        .base-timer__path-elapsed {
+            stroke-width: 7px;
+            stroke: grey;
+        }
     </style>
 </head>
 <body>
@@ -73,13 +98,19 @@
 </div>
 <div class="container">
     <div class = "flexBox" id="image">
+<<<<<<< HEAD
         <img src="/images/campus-test.jpg">
+=======
+        <img src="">
+>>>>>>> 44059ff2da2b4747d7831546d4d52e27a681ab6e
     </div>
     
     <div class = "flexBox"id="options">
         <div id="info" >
             Score:1
+            <div id="timer"></div>
         </div>
+
         <button>option1</button>
         <button>option2</button>
         <button>option3</button>
@@ -87,6 +118,38 @@
 
     </div>
 </div>
+<!--<script>-->
+<!--    document.getElementById("app").innerHTML = `-->
+<!--<div class="base-timer">-->
+<!--  <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">-->
+<!--    <g class="base-timer__circle">-->
+<!--      <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45" />-->
+<!--    </g>-->
+<!--  </svg>-->
+<!--  <span>-->
+<!--        ${formatTime(timeLeft)}-->
+<!--  </span>-->
+<!--</div>-->
+<!--`;-->
+<!--    function formatTimeLeft(time) {-->
+<!--        // The largest round integer less than or equal to the result of time divided being by 60.-->
+<!--        const minutes = Math.floor(time / 60);-->
+
+<!--        // Seconds are the remainder of the time divided by 60 (modulus operator)-->
+<!--        let seconds = time % 60;-->
+
+<!--        // If the value of seconds is less than 10, then display seconds with a leading zero-->
+<!--        if (seconds < 10) {-->
+<!--            seconds = `0${seconds}`;-->
+<!--        }-->
+
+<!--        // The output in MM:SS format-->
+<!--        return `${minutes}:${seconds}`;-->
+<!--    }-->
+
+
+
+<!--</script>-->
 </body>
 
 </html>
